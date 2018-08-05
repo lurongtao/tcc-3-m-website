@@ -1,0 +1,32 @@
+html {
+  font-size: 100px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  header {
+    height: .44rem;
+    background: #00b38a;
+    color: #fff;
+    font-size: .18rem;
+    text-align: center;
+    line-height: .44rem;
+  }
+  main {
+    flex: 1;
+  }
+  footer {
+    height: .44rem;
+    background: #f6f6f6;
+    ul {
+      height: 100%;
+      display: flex;
+      font-size: .16rem;
+      line-height: .44rem;
+      text-align: center;
+      li {
+        flex: 1;
+      }
+    }
+  }
+}

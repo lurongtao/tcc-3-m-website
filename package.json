@@ -1,0 +1,15 @@
+{
+  "name": "tcc-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.1",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^4.9.2",
+    "string-loader": "^0.0.1",
+    "webpack-stream": "^5.1.0"
+  }
+}
