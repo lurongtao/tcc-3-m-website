@@ -1,7 +1,17 @@
-html {
-  font-size: 100px;
+@font-face {
+  font-family: 'iconfont';
+  src: 
+    url('/assets/icons/iconfont.woff') format('woff'),
+    url('/assets/icons/iconfont.ttf') format('truetype');
 }
+
+.ico{
+  font-family:"iconfont" !important;
+}
+
 .container {
+  height: 100%;
+  background: #fff;
   display: flex;
   flex-direction: column;
   header {
@@ -14,6 +24,7 @@ html {
   }
   main {
     flex: 1;
+    overflow: hidden;
   }
   footer {
     height: .44rem;
@@ -25,6 +36,10 @@ html {
       line-height: .44rem;
       text-align: center;
       li {
+        &.active {
+          background: #e7f3f0;
+          color: #00b38a;
+        }
         flex: 1;
       }
     }

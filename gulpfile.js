@@ -14,7 +14,7 @@ gulp.task('server', () => {
   return gulp.src('./dev')
     .pipe(
       server({
-        host: 'localhost',
+        host: '192.168.1.3',
         port: 8080,
         livereload: true,
         directoryListing: {
@@ -77,6 +77,16 @@ gulp.task('copyhtml', () => {
     .pipe(gulp.dest('./dev/'))
 })
 
-gulp.task('default', ['copyhtml', 'scss', 'js', 'server', 'watch'], () => {
+gulp.task('copylibs', () => {
+  return gulp.src('./src/libs/**/*')
+    .pipe(gulp.dest('./dev/libs/'))
+})
+
+gulp.task('copyassets', () => {
+  return gulp.src('./src/assets/**/*')
+    .pipe(gulp.dest('./dev/assets/'))
+})
+
+gulp.task('default', ['copyhtml', 'copylibs', 'copyassets','scss', 'js', 'server', 'watch'], () => {
   console.log('server is running at localhost:8080.')
 })
